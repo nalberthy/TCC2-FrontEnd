@@ -1,0 +1,23 @@
+
+
+<nav class="navbar navbar-expand-lg justify-content-center" style="background-color: #592791;">
+    <h1 class="h3 mb-3 font-weight-normal branco-text"><b>Painel Administrativo</b></h1>
+</nav>
+<div class="d-flex justify-content-center">
+    <form #login="ngForm" (submit)="onLogin()">
+
+        <div class="text-center mb-4">
+            <img class="mb-4" src="/assets/img/logo.svg" alt="logo" width="120" height="120">
+            <h4 class="h3 mb-3 font-weight-normal">Calculo Proposicional</h4>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" [(ngModel)]="email" name="email" id="email" aria-describedby="emailHelp" placeholder="Seu email">
+        </div>
+        <div class="form-group">
+            <label for="senha">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="senha" name="senha" id="senha" placeholder="Sua senha">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
